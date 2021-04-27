@@ -110,7 +110,7 @@ public class UserInterfaceUpdate : MonoBehaviour
 
     public void UserDataUpdate()
     {
-        SceneManager.LoadScene("UserShopData", LoadSceneMode.Single);
+        SceneManager.LoadScene("Administrator", LoadSceneMode.Single);
     }
 
 

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Buy.unity
     guid: 24e6ba796d5bbba4d9ecf79c6a35bb8b
+  - enabled: 1
+    path: Assets/Scenes/Administrator.unity
+    guid: 570fa6afc1d210643928f104d21d5ca9
   m_configObjects: {}
