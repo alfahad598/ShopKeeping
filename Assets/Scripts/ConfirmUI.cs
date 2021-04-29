@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 public class ConfirmUI : MonoBehaviour
 {
     public TMP_Text nameProductConfirm;
@@ -33,7 +34,7 @@ public class ConfirmUI : MonoBehaviour
         brandProductConfirm.SetText(brandForConfirm);
         colorProductConfirm.SetText(colorForConfirm);
         priceProductConfirm.SetText(priceForConfirm);
-        
+
 
     }
     void setBuyerInfo(string nameBuyer, string phoneBuyer, string addressBuyer)
@@ -44,15 +45,15 @@ public class ConfirmUI : MonoBehaviour
     }
     public void setActiveConfirmUi()
     {
-      
+
         confirmWindow.SetActive(true);
         parchaseWindow.SetActive(false);
 
-       
+
     }
 
 
-   public void MessageSendCoRoutine()
+    public void MessageSendCoRoutine()
     {
         postConfirmParchase postConfirmParchaseRef = new postConfirmParchase(nameProductConfirm.text, descriptionProductConfirm.text, colorProductConfirm.text,
             priceProductConfirm.text, brandProductConfirm.text, "1", buyerNameConfirm.text,
@@ -65,7 +66,7 @@ public class ConfirmUI : MonoBehaviour
 
     public IEnumerator postConfirmMessage(string JsonString)
     {
-        
+
 
         string url = "https://test-5e868-default-rtdb.firebaseio.com/Message.json";
 
@@ -77,5 +78,9 @@ public class ConfirmUI : MonoBehaviour
         }
         else
             Debug.Log(sendMessage.result);
+    }
+   public void backFromConfirmParchase()
+    {
+        SceneManager.LoadScene("UserInterface", LoadSceneMode.Single);
     }
 }

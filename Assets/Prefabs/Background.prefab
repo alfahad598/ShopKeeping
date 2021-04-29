@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.082783, y: -22.047287}
+  m_AnchoredPosition: {x: 28.083, y: -24}
   m_SizeDelta: {x: 146.0747, y: 32.2944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469661814794282
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Here will be appear all product description and other neccessary info
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.427, y: 0}
+  m_AnchoredPosition: {x: 33.427, y: -25.1}
   m_SizeDelta: {x: 48.652, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469661820397529
@@ -424,8 +424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.52217, y: 0.00001067}
-  m_SizeDelta: {x: 94.9938, y: 16}
+  m_AnchoredPosition: {x: 48.887, y: -16.651588}
+  m_SizeDelta: {x: 146.4271, y: 16.3031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469661852991820
 CanvasRenderer:
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Product full name '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -560,7 +560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 87.7, y: -46.2}
+  m_AnchoredPosition: {x: 87.7, y: -51.242}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469661882942045
@@ -1163,6 +1163,8 @@ MonoBehaviour:
   ProductName: {fileID: 1893469661852991823}
   ProductPrice: {fileID: 1893469663164751662}
   image_UrlParse: 
+  userInterface: {fileID: 0}
+  userBuyingInfomation: {fileID: 0}
 --- !u!1 &1893469662317286988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.4263, y: 85}
+  m_AnchoredPosition: {x: 33.427, y: 85}
   m_SizeDelta: {x: 48.6525, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469662969131260
@@ -1539,7 +1541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.054535, y: 67.1}
+  m_AnchoredPosition: {x: 54.055, y: 50.6}
   m_SizeDelta: {x: 89.909, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469663190704841
@@ -1808,7 +1810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 33.426, y: 20}
+  m_AnchoredPosition: {x: 33.426, y: -9.100006}
   m_SizeDelta: {x: 48.652, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1893469663440291856

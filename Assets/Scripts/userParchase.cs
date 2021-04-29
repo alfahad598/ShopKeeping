@@ -72,4 +72,9 @@ public class userParchase : MonoBehaviour
     {
         buyerInfoPassing.Invoke(buyerName.text, buyerPhoneNumber.text, buyerAddress.text);
     }
+
+    private void OnDestroy()
+    {
+        ItemsDownloader.productInformationEvent -= setInformationOfProduct;
+    }
 }

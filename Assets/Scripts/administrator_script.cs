@@ -15,7 +15,7 @@ public class administrator_script : MonoBehaviour
     public TMP_Text autoMobile;
     public TMP_Text teleCommunication;
     public TMP_Text purchaseMessage;
-    string first = "homeappliance";
+  
     string[] itemsNameArraay = {"homeappliance", "menwomenwardrobe", "officeequipment",
     "mobilephone", "automobile", "telecommunication"};
     public string index_url;  

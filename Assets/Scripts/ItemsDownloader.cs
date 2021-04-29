@@ -20,7 +20,7 @@ public class ItemsDownloader : MonoBehaviour
         string BuyInfoDescription, string BuyInfoName, string BuyInfoPrice);
     public static event BuyInformation productInformationEvent;
     
-    private void Start()
+    private void Awake()
     {
         UserInterfaceUpdate.jsonFound += getFoundJson;
         productInformationEvent += Subcribe;
@@ -56,8 +56,13 @@ public class ItemsDownloader : MonoBehaviour
 
             UserInterfaceUpdate.jsonFound -= getFoundJson;
         }
+        
     }
-  
+    private void OnDestroy()
+    {
+        UserInterfaceUpdate.jsonFound -= getFoundJson;
+    }
+
     public void getBuyingInformation()
     {
         productInformationEvent.Invoke(image_UrlParse, ProductBrand.text, ProductColor.text,

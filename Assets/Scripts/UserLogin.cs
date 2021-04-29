@@ -52,7 +52,7 @@ public class UserLogin : MonoBehaviour
                 message.SetText(unityWebRequest.downloadHandler.text);
                 //  yield WaitForSeconds(1);
                 if(unityWebRequest.downloadHandler.text == "Login Successfull"){
-                    SceneManager.LoadScene("UserShopData", LoadSceneMode.Single);
+                    SceneManager.LoadScene("Administrator", LoadSceneMode.Single);
                 }
                 
             }
