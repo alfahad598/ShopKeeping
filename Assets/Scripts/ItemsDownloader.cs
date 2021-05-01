@@ -13,16 +13,18 @@ public class ItemsDownloader : MonoBehaviour
     public TMP_Text ProductName;
     public TMP_Text ProductPrice;
     public string image_UrlParse;
-    public GameObject userInterface;
-    public GameObject userBuyingInfomation;
 
     public delegate void BuyInformation(string BuyInfoPhoto, string BuyInfoBrand, string BuyInfoColor,
         string BuyInfoDescription, string BuyInfoName, string BuyInfoPrice);
     public static event BuyInformation productInformationEvent;
-    
+    public delegate void CartInformation(string BuyInfoPhoto, string BuyInfoBrand, string BuyInfoColor,
+        string BuyInfoDescription, string BuyInfoName, string BuyInfoPrice);
+    public static event CartInformation CartInformationEvent;
+
     private void Awake()
     {
         UserInterfaceUpdate.jsonFound += getFoundJson;
+        
         productInformationEvent += Subcribe;
     }
     public void getFoundJson(string brand, string color, string description, string name,
@@ -55,12 +57,14 @@ public class ItemsDownloader : MonoBehaviour
             photograph.texture = foundImage;
 
             UserInterfaceUpdate.jsonFound -= getFoundJson;
+          
         }
         
     }
     private void OnDestroy()
     {
         UserInterfaceUpdate.jsonFound -= getFoundJson;
+;
     }
 
     public void getBuyingInformation()
@@ -68,7 +72,17 @@ public class ItemsDownloader : MonoBehaviour
         productInformationEvent.Invoke(image_UrlParse, ProductBrand.text, ProductColor.text,
             ProducDescription.text,ProductName.text, ProductPrice.text);
 
+
     }
+    public void getInformationForCart()
+    {
+        CartInformationEvent.Invoke(image_UrlParse, ProductBrand.text, ProductColor.text,
+            ProducDescription.text, ProductName.text, ProductPrice.text);
+
+
+    }
+
+
 
     void Subcribe(string sUrl, string sBrand,
        string sColor, string sDescription, string sName, string sPrice)

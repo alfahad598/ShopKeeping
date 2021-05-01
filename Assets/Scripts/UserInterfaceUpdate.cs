@@ -112,6 +112,9 @@ public class UserInterfaceUpdate : MonoBehaviour
     {
         SceneManager.LoadScene("Administrator", LoadSceneMode.Single);
     }
-
+    public void UserCartUpdate()
+    {
+        SceneManager.LoadScene("Cart", LoadSceneMode.Single);
+    }
 
 }
